@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"/>
+    <ImageView
+        android:id="@+id/iv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/bu_down1_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载图片"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/bu_visit_baidu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取百度首页返回字符串"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="85dp"
+    android:layout_width="match_parent"
+    android:background="#F8F7F7"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/iv_item_shop"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/perfect"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tv_item_shopname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_item_shop"
+        android:text="蛋包饭(中山路店)"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        />
+
+    <!--评分-->
+    <LinearLayout
+        android:id="@+id/ll_item_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/iv_item_shop"
+        android:layout_below="@id/tv_item_shopname"
+        >
+
+        <RatingBar
+            android:id="@+id/rb_item_shopstar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:numStars="5"
+            android:rating="2"
+            android:progressTint="#FCDA42"/>
+        <TextView
+            android:id="@+id/tv_shop_rankNum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2.0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="月售"/>
+
+        <TextView
+            android:id="@+id/tv_shop_monthsale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2000"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_item_shop"
+        android:layout_below="@id/ll_item_second">
+
+        <TextView
+            android:id="@+id/tv_shop_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起送￥"/>
+
+        <TextView
+            android:id="@+id/tv_shop_shartmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:layout_toRightOf="@id/tv_shop_1"/>
+
+        <TextView
+            android:id="@+id/tv_shop_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配送￥"
+            android:layout_toRightOf="@id/tv_shop_shartmoney"/>
+
+        <TextView
+            android:id="@+id/tv_shop_sendMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:layout_toRightOf="@id/tv_shop_2"
+            />
+
+        <TextView
+            android:id="@+id/tv_shop_sendmeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.5"
+            android:layout_toLeftOf="@id/tv_shop_3"/>
+
+        <TextView
+            android:id="@+id/tv_shop_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="km"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
